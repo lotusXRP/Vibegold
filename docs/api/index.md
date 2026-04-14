@@ -8,27 +8,26 @@ For comprehensive and up-to-date API documentation, please use the following too
 
 ### JavaScript/TypeScript Projects
 
-*   **TypeDoc**: For generating HTML documentation from TypeScript source code.
-    ```bash
-    npm install --save-dev typedoc
-    npx typedoc --out docs/api src/
-    ```
+- **TypeDoc**: For generating HTML documentation from TypeScript source code.
+  ```bash
+  npm install --save-dev typedoc
+  npx typedoc --out docs/api src/
+  ```
 
 ### Python Projects
 
-*   **Sphinx**: For generating professional documentation, often used with autodoc for API reference.
-    ```bash
-    pip install sphinx sphinx-rtd-theme
-    sphinx-quickstart (follow prompts)
-    # In conf.py, enable sphinx.ext.autodoc
-    sphinx-apidoc -o docs/api src/
-    make html (from docs directory)
-    ```
+- **Sphinx**: For generating professional documentation, often used with autodoc for API reference.
+  ```bash
+  pip install sphinx sphinx-rtd-theme
+  sphinx-quickstart (follow prompts)
+  # In conf.py, enable sphinx.ext.autodoc
+  sphinx-apidoc -o docs/api src/
+  make html (from docs directory)
+  ```
 
 ## API Endpoints / Modules
 
 (This section would typically be populated by an automated tool. For now, it serves as a placeholder.)
 
-*   **Module/Endpoint 1**: Description
-*   **Module/Endpoint 2**: Description
-
+- **Module/Endpoint 1**: Description
+- **Module/Endpoint 2**: Description

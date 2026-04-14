@@ -17,6 +17,7 @@ See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 ## Commit Messages
 
 Use conventional commits:
+
 - `feat:` New feature
 - `fix:` Bug fix
 - `docs:` Documentation

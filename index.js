@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 export default function Home() {
@@ -6,16 +5,19 @@ export default function Home() {
 
   const handleCheckout = async (item_id) => {
     setLoading(true);
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/create-checkout-session`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ item_id, quantity: 1 }),
-    });
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_API_BASE_URL}/create-checkout-session`,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ item_id, quantity: 1 }),
+      },
+    );
     const data = await response.json();
     if (data.checkout_url) {
       window.location.href = data.checkout_url;
     } else {
-      alert("Checkout failed.");
+      alert('Checkout failed.');
       setLoading(false);
     }
   };
